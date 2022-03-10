@@ -1,0 +1,9 @@
+server:
+  port: 9091
+
+spring:
+  data:
+    mongodb:
+      database: customermsdb
+      host: mongoDB
+      port: 27017
