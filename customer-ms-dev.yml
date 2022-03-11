@@ -1,3 +1,6 @@
+application:
+  location: pruebas
+
 server:
   port: 9091
 
