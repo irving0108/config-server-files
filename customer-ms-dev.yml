@@ -40,4 +40,4 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-server-ms:8761/eureka
+      defaultZone: http://eurekaservicems:8761/eureka
