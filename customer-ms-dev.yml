@@ -1,5 +1,5 @@
 application:
-  location: pruebas
+  name: customer-ms
 
 server:
   port: 9091
@@ -7,6 +7,12 @@ server:
 spring:
   data:
     mongodb:
-      database: customermsdb
-      host: mongoDB
+      database: mongodbms
+      host: localhost
       port: 27017
+      
+customer:
+  types: PERSONAL, EMPRESARIAL
+  type:
+    personal: PERSONAL
+    empresarial: EMPRESARIAL
