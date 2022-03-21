@@ -8,7 +8,7 @@ spring:
   data:
     mongodb:
       database: mongodbms
-      host: mongodb
+      host: localhost
       port: 27017
       
 customer:
@@ -19,7 +19,7 @@ customer:
     personal: PERSONAL
     empresarial: EMPRESARIAL
   ms:
-    uri: http://customer-ms:9091/customer
+    uri: http://localhost:9091/customer
     
 #Actuator      
 management:
@@ -43,4 +43,4 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-server-ms:8761/eureka
+      defaultZone: http://localhost:8761/eureka

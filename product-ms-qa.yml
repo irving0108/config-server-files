@@ -1,22 +1,25 @@
 application:
-  name: customer-ms
+  name: product-ms
 
 server:
-  port: 9091
+  port: 9092
 
 spring:
   data:
     mongodb:
       database: mongodbms
-      host: localhost
+      host: mongodb
       port: 27017
       
 customer:
-  types: PERSONAL, EMPRESARIAL
+  product: 
+    type:
+      id: 1,2,3,4,5,6
   type:
     personal: PERSONAL
     empresarial: EMPRESARIAL
-    
+  ms:
+    uri: http://customer-ms:9091/customer
     
 #Actuator      
 management:
@@ -40,4 +43,4 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka-server-ms:8761/eureka
