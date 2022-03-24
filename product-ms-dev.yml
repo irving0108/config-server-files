@@ -2,7 +2,7 @@ application:
   name: product-ms
 
 server:
-  port: 9092
+  port: 9095
 
 spring:
   data:
